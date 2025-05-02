@@ -10,8 +10,8 @@ CREATE TABLE usuarios (
     fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Tabla de productos
-CREATE TABLE productos (
+-- Tabla de products
+CREATE TABLE products (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
     descripcion TEXT,
@@ -27,7 +27,7 @@ VALUES
 ('Ricardo', 'ricardo.andrade@example.com', '123456'),
 ('Juan', 'juan.perez@example.com', '654321');
 
--- Inserción de datos de ejemplo en la tabla productos
-INSERT INTO productos (nombre, descripcion, precio_costo, precio_venta, cantidad, fotografia)
+-- Inserción de datos de ejemplo en la tabla products
+INSERT INTO products (nombre, descripcion, precio_costo, precio_venta, cantidad, fotografia)
 VALUES 
 ('manzana verde', 'manzana de china', 10.50, 15.00, 100, 'https://static.vecteezy.com/system/resources/thumbnails/012/086/172/small/green-apple-with-green-leaf-isolated-on-white-background-vector.jpg')

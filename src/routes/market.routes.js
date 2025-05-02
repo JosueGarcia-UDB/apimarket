@@ -1,25 +1,25 @@
 import Router from 'express'
-import { getUsuarios, getUsuario, getProductos, postProductos, putProductos,deleteProductos,getProductosId } from '../controllers/market.controllers.js';
+import { getUsuarios, getUsuario, getproducts, postproducts, putproducts, deleteproducts, getproductsId } from '../controllers/market.controllers.js';
 
-const router=Router()
+const router = Router()
 
 // Ruta para consultar usuarios
-router.get('/usuarios',getUsuarios);
+router.get('/usuarios', getUsuarios);
 
-//Ruta para consultar productos
-router.get('/productos',getProductos);
+//Ruta para consultar products
+router.get('/products', getproducts);
 
-//Ruta para consultar productos ID
-router.get('/productos/:id',getProductosId);
+//Ruta para consultar products ID
+router.get('/products/:id', getproductsId);
 
 // Ruta para iniciar sesión (Login)
 router.post('/usuarios/login', getUsuario);
 
 //Ruta para ingresar producto
-router.post('/productos',postProductos);
+router.post('/products', postproducts);
 //Ruta para actualizar producto
-router.put('/productos/:id', putProductos);
+router.put('/products/:id', putproducts);
 //Ruta para eliminar producto
-router.delete('/productos/:id', deleteProductos);
+router.delete('/products/:id', deleteproducts);
 
 export default router
